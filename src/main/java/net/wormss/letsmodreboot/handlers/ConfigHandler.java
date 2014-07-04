@@ -17,7 +17,7 @@ import net.wormss.letsmodreboot.utility.ModLog;
 public class ConfigHandler {
 	static class EventRegister {
 		@SubscribeEvent
-		void onConfigurationChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event) {
+		public void onConfigurationChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event) {
 			ModLog.log("configChanged:", event.modID);
 			if (event.modID.equalsIgnoreCase(R.mod.ID)) {
 				loadConfig();
@@ -37,12 +37,7 @@ public class ConfigHandler {
 	}
 	
 	private static void loadConfig() {
-		if ( config == null ) {
-			return;
-		}
-		ModLog.log("loadConfig:", config);
-		config.load();
-		value = config.get(Configuration.CATEGORY_GENERAL, R.config.VALUE, value, "Example configValue").getBoolean(value);
+		value = config.getBoolean(R.config.VALUE, Configuration.CATEGORY_GENERAL, value, "Example configValue");
 		
 		if ( config.hasChanged() ) {
 			config.save();
