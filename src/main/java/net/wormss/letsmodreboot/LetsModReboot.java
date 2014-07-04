@@ -1,6 +1,6 @@
 package net.wormss.letsmodreboot;
 
-import net.wormss.letsmodreboot.config.ConfigurationHandler;
+import net.wormss.letsmodreboot.handlers.ConfigHandler;
 import net.wormss.letsmodreboot.proxy.IProxy;
 import net.wormss.letsmodreboot.resources.R;
 
@@ -10,7 +10,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = R.mod.ID, name = R.mod.NAME, version = R.mod.VERSION)
+@Mod(modid = R.mod.ID, name = R.mod.NAME, version = R.mod.VERSION, guiFactory = R.mod.GUI_FACTORY)
 public class LetsModReboot {
 	@Mod.Instance(R.mod.ID)
 	public static LetsModReboot instance;
@@ -21,7 +21,7 @@ public class LetsModReboot {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		//network handling
-		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+		ConfigHandler.init(event.getSuggestedConfigurationFile());
 		//initialise items
 		//initialise blocks
 	}

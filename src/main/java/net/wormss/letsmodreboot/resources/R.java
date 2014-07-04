@@ -6,6 +6,7 @@ public final class R {
 		public static final String ID = "LetsModReboot";
 		public static final String NAME = "Lets Mod Reboot";
 		public static final String VERSION = "1.7.2-1.0";
+		public static final String GUI_FACTORY = PACKAGE + ".client.gui.GuiFactory";
 	}
 
 	public static final class proxy {
