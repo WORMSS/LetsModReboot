@@ -1,6 +1,7 @@
 package net.wormss.letsmodreboot;
 
 import net.wormss.letsmodreboot.handlers.ConfigHandler;
+import net.wormss.letsmodreboot.item.ModItems;
 import net.wormss.letsmodreboot.proxy.IProxy;
 import net.wormss.letsmodreboot.references.R;
 
@@ -22,7 +23,7 @@ public class LetsModReboot {
 	public void preInit(FMLPreInitializationEvent event) {
 		//network handling
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
-		//initialise items
+		ModItems.init();
 		//initialise blocks
 	}
 
