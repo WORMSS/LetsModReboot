@@ -11,7 +11,7 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.config.ConfigCategory;
 import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.common.config.Configuration;
-import net.wormss.letsmodreboot.resources.R;
+import net.wormss.letsmodreboot.references.R;
 import net.wormss.letsmodreboot.utility.ModLog;
 
 public class ConfigHandler {

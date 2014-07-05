@@ -2,7 +2,7 @@ package net.wormss.letsmodreboot;
 
 import net.wormss.letsmodreboot.handlers.ConfigHandler;
 import net.wormss.letsmodreboot.proxy.IProxy;
-import net.wormss.letsmodreboot.resources.R;
+import net.wormss.letsmodreboot.references.R;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;

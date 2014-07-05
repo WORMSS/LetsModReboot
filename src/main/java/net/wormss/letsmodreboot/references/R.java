@@ -1,4 +1,4 @@
-package net.wormss.letsmodreboot.resources;
+package net.wormss.letsmodreboot.references;
 
 public final class R {
 	private static final String PACKAGE = "net.wormss.letsmodreboot";

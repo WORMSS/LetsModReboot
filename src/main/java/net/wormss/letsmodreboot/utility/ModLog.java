@@ -3,7 +3,7 @@ package net.wormss.letsmodreboot.utility;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.Level;
 
-import net.wormss.letsmodreboot.resources.R;
+import net.wormss.letsmodreboot.references.R;
 import cpw.mods.fml.common.FMLLog;
 
 public class ModLog {
