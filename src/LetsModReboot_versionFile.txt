@@ -1,0 +1,14 @@
+{
+    "versionList": [
+        {
+            "mcVersion":"Minecraft 1.7.10",
+            "modVersion":"1.7.10-1.0",
+            "changeLog": [
+                "Testing version update"
+            ],
+            "updateURL":"http://minecraft.curseforge.com/mc-mods/221140-version-checker/files/2204644/download",
+            "isDirectLink":"true",
+            "newFileName":"LetsModReboot.jar"
+        }
+    ]
+}
