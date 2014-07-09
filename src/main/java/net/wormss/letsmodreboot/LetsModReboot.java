@@ -1,5 +1,6 @@
 package net.wormss.letsmodreboot;
 
+import net.wormss.letsmodreboot.block.ModBlocks;
 import net.wormss.letsmodreboot.handlers.ConfigHandler;
 import net.wormss.letsmodreboot.handlers.InterMod;
 import net.wormss.letsmodreboot.item.ModItems;
@@ -26,7 +27,7 @@ public class LetsModReboot {
 		//network handling
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
 		ModItems.init();
-		//initialise blocks
+		ModBlocks.init();
 		InterMod.version_checker.addVersionCheck();
 	}
 
