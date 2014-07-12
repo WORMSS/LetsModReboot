@@ -1,4 +1,9 @@
 
-#Item localisations
+# Misc
+itemGroup.letsmodreboot:general.name=Lets Mod Reboot
+
+# Item
 item.letsmodreboot:basic.name=Basic Item
-tile.letsmodreboot:basic.name=Basic Block
+
+# Blocks
+tile.letsmodreboot:basicBlock.name=Basic Block

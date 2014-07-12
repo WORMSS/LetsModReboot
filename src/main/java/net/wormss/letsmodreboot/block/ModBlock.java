@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.wormss.letsmodreboot.creative.ModCreativeTabs;
 import net.wormss.letsmodreboot.references.Textures;
 
 public class ModBlock extends Block {
@@ -18,7 +19,7 @@ public class ModBlock extends Block {
 	
 	public ModBlock(Material material) {
 		super(material);
-		this.setCreativeTab(CreativeTabs.tabMisc);
+		this.setCreativeTab(ModCreativeTabs.general);
 	}
 
 	@Override

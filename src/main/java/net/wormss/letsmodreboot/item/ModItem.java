@@ -6,13 +6,14 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.wormss.letsmodreboot.creative.ModCreativeTabs;
 import net.wormss.letsmodreboot.references.Textures;
 
 public class ModItem extends Item {
 	
 	public ModItem() {
 		super();
-		this.setCreativeTab(CreativeTabs.tabMisc);
+		this.setCreativeTab(ModCreativeTabs.general);
 		this.setNoRepair();
 	}
 	
